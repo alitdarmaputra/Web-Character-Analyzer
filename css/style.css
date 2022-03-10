@@ -1,0 +1,32 @@
+.container {
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: bold;
+    color: #2FA4FF;
+}
+
+header h3 {
+    font-size: 0.9em;
+}
+
+header .github-content {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header i {
+    font-size: 3em;
+}
