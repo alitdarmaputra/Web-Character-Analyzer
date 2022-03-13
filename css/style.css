@@ -1,3 +1,7 @@
+body {
+    background-image: url(../img/so-white.png);
+}
+
 .container {
     padding-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,3 +34,33 @@ header a {
 header i {
     font-size: 3em;
 }
+
+/* Content */
+/* Form */
+.form-floating textarea.form-control {
+    height: 300px;
+}
+
+button.btn.btn-primary {
+    width: 100%;
+}
+
+/* Result */
+
+.result p {
+    margin-top: 20px;
+    line-height: 100%;
+}
+
+/* responsive breakpoint */
+
+@media screen and (max-width:576px) {
+
+    .row .col-lg.side-right {
+        padding-top: 20px;
+    }
+
+}
+
+
+
