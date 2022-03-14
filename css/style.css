@@ -52,10 +52,23 @@ button.btn.btn-primary {
     line-height: 100%;
 }
 
+/* Description */
+.description {
+    margin-top: 20px;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
 /* responsive breakpoint */
 
 @media screen and (max-width:576px) {
-
     .row .col-lg.side-right {
         padding-top: 20px;
     }
