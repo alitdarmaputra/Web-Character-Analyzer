@@ -10,11 +10,14 @@ input_btn.addEventListener("click", () => {
     const input_string = input_form.value;
     if (input_string) {
         result = textAnalyze.textScript(input_string);
-        updateUI(result)
+        if(!result)
+            resetResult()
+        else
+            updateUI(result)
     }
 
     if(result_place.innerHTML != "" && input_string == "")
-        result_place.innerHTML = ""; 
+       resetResult();
 })
 
 function makeCards(e) {
@@ -34,4 +37,8 @@ function updateUI (result) {
     }
 
     result_place.innerHTML = cards;
+}
+
+function resetResult() {
+    result_place.innerHTML = ""; 
 }

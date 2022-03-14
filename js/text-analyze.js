@@ -29,12 +29,12 @@ class TextClass {
     textScript(text) {
         const script = this.groupBy(text, char => {
             const script = this.charScript(char.codePointAt(0))
-            return script.name ? script.name : "none";
-        }).filter(e => e != "none");
+            return script ? script.name : "none";
+        }).filter(({name}) => name != "none");
 
         const total = script.reduce((n, {count}) => n+count, 0)
 
-        if(total == 0) return "No Script Found";
+        if(total == 0) return null;
         return script.map(({name, count}) => {
             let resultInPercent = Math.round(count/total * 100);
             return {name, resultInPercent};
