@@ -36,7 +36,8 @@ class TextClass {
 
         if(total == 0) return "No Script Found";
         return script.map(({name, count}) => {
-            return `${name} ${Math.round(count/total * 100)} %`;
-        }).join(", ");
+            let resultInPercent = Math.round(count/total * 100);
+            return {name, resultInPercent};
+        });
     }
 }
